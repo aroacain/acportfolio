@@ -148,6 +148,7 @@ h2 {
   overflow: hidden;
   max-width: 90%;
   margin: auto;
+  border-top: 1px solid var(--dark);
   border-right: 1px solid var(--dark);
   border-left: 1px solid var(--dark);
 }
@@ -200,13 +201,15 @@ h2 {
 
 /* See More Reviews Button */
 .reviews-button {
+  border-top: 1px solid var(--dark);
+}
+.button {
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-top: 1px solid var(--dark);
 }
 
-.reviews-button .btn {
+.button .btn {
   display: inline-block;
   background-color: #26314a; /* dark color */
   color: #fff;
@@ -222,13 +225,21 @@ h2 {
   background-color: #1b2333;
 }
 
-/* EDUCATION AND EXPERIENCE SECTION */
+/* CONTENT CONTAINER */
 
-#education-experience .content {
+.content {
   margin: 75px;
 }
 
-#education-experience ul {
+.content p {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #26314a;
+}
+
+.content ul {
   list-style: disc inside;
   padding: 0;
   margin: 0;
@@ -238,7 +249,7 @@ h2 {
   line-height: 1.6;
 }
 
-#education-experience li {
+.content li {
   margin-bottom: 16px;
 }
 
