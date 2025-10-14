@@ -1,0 +1,245 @@
+/* VARIABLES */
+
+:root {
+  /* Fonts */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+
+  /* Colors */
+  --background-dark: #F6EEE0;
+  --background-light: #fffbf5;
+  --dark: #26314a;
+}
+
+/* RESETS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBALS */
+
+/* Reusable h2 style */
+h2 {
+  font-family: var(--font-heading);
+  font-size: 76px;
+  font-weight: 400; 
+  color: var(--dark);
+  text-align: left;
+  border-top: 1px solid var(--dark);
+  border-bottom: 1px solid var(--dark);
+  padding: 1em;
+  background-color: var(--background-dark);
+}
+
+/* Responsive for tablets & mobile */
+@media (max-width: 980px) {
+  .review-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+/* HERO */
+
+/* Reset some defaults */
+.hero {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-content {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5%;
+  color: var(--dark);
+  background-color: var(--background-dark)
+}
+
+.hero-content h1 {
+  font-family: var(--font-heading);
+  font-size: 100px;
+  margin: 0 0 20px 0;
+}
+
+.hero-content p {
+  font-family: var(--font-body);
+  font-size: 38px;
+  margin: 0;
+}
+
+/* Right third image */
+.hero-image {
+  flex: 50%;
+  border-left: 1px solid var(--dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* maintain aspect ratio, cover entire area */
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 980px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 2em;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .hero-content p {
+    font-size: 28px;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 400px;
+    border-left: none;
+    border-top: 1px solid var(--dark);
+  }
+
+  .hero-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+
+/* REVIEWS SECTION */
+
+/* Reviews Section */
+#reviews {
+  background: var(--background-light); 
+  color: #26314a;
+}
+
+/* Carousel Layout */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--background-light);
+}
+
+.carousel-track-container {
+  overflow: hidden;
+  max-width: 90%;
+  margin: auto;
+  border-right: 1px solid var(--dark);
+  border-left: 1px solid var(--dark);
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.review-box {
+  background: var(--background-light );
+  padding: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  flex: 0 0 calc(33.333% - 20px); /* 3 per view */
+  box-sizing: border-box;
+  height: 500px;
+  border-right: 1px solid var(--dark);
+}
+
+/* Star Styling */
+.stars {
+  margin-bottom: 10px; /* space between stars and text */
+  color: #f4c542; /* gold stars */
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Carousel Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+/* Responsive: 1 review per view on small screens */
+@media (max-width: 980px) {
+  .review-box {
+    flex: 0 0 100%;
+  }
+}
+
+/* See More Reviews Button */
+.reviews-button {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid var(--dark);
+}
+
+.reviews-button .btn {
+  display: inline-block;
+  background-color: #26314a; /* dark color */
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.reviews-button .btn:hover {
+  background-color: #1b2333;
+}
+
+/* EDUCATION AND EXPERIENCE SECTION */
+
+#education-experience .content {
+  margin: 75px;
+}
+
+#education-experience ul {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: #26314a;
+  line-height: 1.6;
+}
+
+#education-experience li {
+  margin-bottom: 16px;
+}
+
+
