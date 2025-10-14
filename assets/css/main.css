@@ -34,6 +34,16 @@ h2 {
   background-color: var(--background-dark);
 }
 
+/* Reusable h3 style */
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 36px;
+    padding-bottom: 24px;  
+    font-weight: 400; 
+    color: var(--dark);
+    text-align: left;
+  }
+
 /* Responsive for tablets & mobile */
 @media (max-width: 980px) {
   .review-grid {
@@ -244,6 +254,7 @@ h2 {
   list-style: disc inside;
   padding: 0;
   margin: 0;
+  margin-bottom: 40px;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   color: #26314a;
