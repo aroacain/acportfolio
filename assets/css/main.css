@@ -24,7 +24,7 @@
 /* Reusable h2 style */
 h2 {
   font-family: var(--font-heading);
-  font-size: 76px;
+  font-size: 64px;
   font-weight: 400; 
   color: var(--dark);
   text-align: left;
@@ -234,6 +234,7 @@ h2 {
 .content p {
   padding: 0;
   margin: 0;
+  margin-bottom: 36px;
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   color: #26314a;
