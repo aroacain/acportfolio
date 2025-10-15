@@ -265,4 +265,10 @@ h2 {
   margin-bottom: 16px;
 }
 
+/* Global Map Styles */
+#global-map {
+  max-width: 100%;
+  margin-bottom: 36px;
+}
+
 
